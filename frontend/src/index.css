@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display: 'Fredoka', cursive, sans-serif;
+
+  --color-brand-forest: #2D4739;
+  --color-brand-cream: #FFFBF7;
+  --color-brand-beige: #FAF1E6;
+  --color-brand-orange: #E07A5F;
+  --color-brand-dark: #261C14;
+  --color-brand-light-green: #E8F0E6;
+  --color-brand-green-accent: #4E785C;
+  --color-brand-yellow: #F2CC8F;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-image: linear-gradient(rgba(255, 251, 247, 0.85), rgba(255, 251, 247, 0.85)), url('./assets/classroom-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--color-brand-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.woodland-trail {
+  background-image: linear-gradient(to right, #4E785C 50%, transparent 50%);
+  background-position: bottom;
+  background-size: 12px 2px;
+  background-repeat: repeat-x;
+}
